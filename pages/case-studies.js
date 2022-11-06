@@ -5,18 +5,15 @@ const CaseStudies = () => {
   const [expanded, setExpanded] = useState(false);
   const [recentPost, setRecentPost] = useState({});
   const [futuredPost, setFuturedPost] = useState({});
-  
+
   const [blog, setBlog] = useState([]);
   const dataForDisplay = expanded ? blog : blog.slice(0, 6);
-
-
 
   useEffect(() => {
     fetch("/Data/recentPost.json")
       .then((res) => res.json())
       .then((recentPost) => setRecentPost(recentPost));
   }, []);
-
 
   useEffect(() => {
     fetch("/Data/futuredPost.json")
@@ -30,8 +27,6 @@ const CaseStudies = () => {
       .then((blog) => setBlog(blog));
   }, []);
 
-
-  
   return (
     <>
       {/* <!-- hero section --> */}
@@ -192,11 +187,12 @@ const CaseStudies = () => {
       {/* <!-- recent post section --> */}
 
       {/* <!-- blog item --> */}
-      
-        <section className="blog">
-          <div className="container">
-         <div className="blog_item grid grid-cols-12 gap-4">
-              {dataForDisplay.length > 0 && dataForDisplay.map((item, index) => 
+
+      <section className="blog">
+        <div className="container">
+          <div className="blog_item grid grid-cols-12 gap-4">
+            {dataForDisplay.length > 0 &&
+              dataForDisplay.map((item, index) => (
                 <div key={index} className="col-span-12 md:col-span-4">
                   <div className="img rounded-[10px] overflow-hidden mb-4">
                     <Image
@@ -224,20 +220,20 @@ const CaseStudies = () => {
                     </div>
                   </div>
                 </div>
-              )}
-              <div className="col-span-12">
-                <button
-                  type="button"
-                  onClick={() => setExpanded(!expanded)}
-                  className="mt-5 text-sm font-semibold uppercase text-white bg-[#30A7D7] rounded-lg max-w-[294px] max-h-[44px] w-full h-full mx-auto block"
-                >
-                  {expanded ? "Show Less" : "Show More"}
-                </button>
-              </div>
+              ))}
+            <div className="col-span-12">
+              <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="mt-5 text-sm font-semibold uppercase text-white bg-[#30A7D7] rounded-lg max-w-[294px] max-h-[44px] w-full h-full mx-auto block"
+              >
+                {expanded ? "Show Less" : "Show More"}
+              </button>
             </div>
           </div>
-        </section>
-      
+        </div>
+      </section>
+
       {/* <!-- blog item --> */}
     </>
   );
