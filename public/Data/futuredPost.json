@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "img": "item1",
+    "desc": "Increase your monthly traffic and sales"
+  },
+  {
+    "id": 1,
+    "img": "item2",
+    "desc": "Increase your monthly traffic and sales"
+  },
+  {
+    "id": 2,
+    "img": "item3",
+    "desc": "Increase your monthly traffic and sales"
+  },
+  {
+    "id": 3,
+    "img": "item4",
+    "desc": "Increase your monthly traffic and sales"
+  }
+]

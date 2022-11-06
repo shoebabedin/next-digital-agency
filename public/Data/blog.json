@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "img": "item1",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "01.02.22",
+    "readTime": "2"
+  },
+  {
+    "id": 1,
+    "img": "item2",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "02.02.22",
+    "readTime": "3"
+  },
+  {
+    "id": 2,
+    "img": "item3",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "04.02.22",
+    "readTime": "5"
+  },
+  {
+    "id": 3,
+    "img": "item4",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "06.02.22",
+    "readTime": "8"
+  },
+  {
+    "id": 4,
+    "img": "item5",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "08.02.22",
+    "readTime": "10"
+  },
+  {
+    "id": 5,
+    "img": "item6",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "10.02.22",
+    "readTime": "12"
+  },
+  {
+    "id": 6,
+    "img": "item7",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "12.02.22",
+    "readTime": "14"
+  },
+  {
+    "id": 7,
+    "img": "item8",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "14.02.22",
+    "readTime": "16"
+  },
+  {
+    "id": 8,
+    "img": "item1",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "16.02.22",
+    "readTime": "18"
+  },
+  {
+    "id": 9,
+    "img": "item2",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "18.02.22",
+    "readTime": "20"
+  },
+  {
+    "id": 10,
+    "img": "item3",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "20.02.22",
+    "readTime": "22"
+  },
+  {
+    "id": 11,
+    "img": "item4",
+    "title": "Increase your monthly traffic and sales",
+    "desc": "Curabitur nec tristique lacus. Proin ut euismod neque. Vestibulum cursus erat viverra sem",
+    "date": "22.02.22",
+    "readTime": "24"
+  }
+]
