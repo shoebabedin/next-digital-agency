@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ const NoMatch = () => {
             <div className="absolute">
               <div className="flex items-start justify-start flex-col gap-4">
                 <h1 className="text-gray-800 font-bold text-2xl">
-                  Looks like you've found the doorway to the great nothing
+                  Looks like you&apos;ve found the doorway to the great nothing
                 </h1>
                 <p className="text-gray-800">
                   Sorry about that! Please visit our hompage to get where you
@@ -22,12 +23,12 @@ const NoMatch = () => {
               </div>
             </div>
             <div>
-              <img src={require('./../../../assets/images/notfound/404.png')} />
+              <Image alt="" src={'/assets/images/notfound/404.png'} width={100} height={100} />
             </div>
           </div>
         </div>
         <div>
-          <img src={require('./../../../assets/images/notfound/error.png')} />
+          <Image alt="" src={'/assets/images/notfound/error.png'} width={100} height={100} />
         </div>
       </div>
     </>
