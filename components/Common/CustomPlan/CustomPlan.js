@@ -1,6 +1,18 @@
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CustomPlan = () => {
+  const notify = () => toast.success('Thanks for your message', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
   return (
     <>
       <section className="custom_plan pt-16 md:py-16">
@@ -18,7 +30,7 @@ const CustomPlan = () => {
                 type="text"
                 placeholder="Your Email Here"
               />
-              <span className="absolute top-[50%] right-3 -translate-y-[50%]">
+              <button onClick={notify} className="absolute top-[50%] right-3 -translate-y-[50%]">
                 <svg
                   width="16"
                   height="16"
@@ -32,7 +44,19 @@ const CustomPlan = () => {
                     fillOpacity="0.4"
                   />
                 </svg>
-              </span>
+              </button>
+              <ToastContainer
+                      position="top-right"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                      newestOnTop={false}
+                      closeOnClick
+                      rtl={false}
+                      pauseOnFocusLoss
+                      draggable
+                      pauseOnHover
+                      theme="dark"
+                    />
             </div>
           </div>
         </div>

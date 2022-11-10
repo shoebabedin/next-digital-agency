@@ -1,3 +1,4 @@
+import { MinusCircle, PlusCircle } from "phosphor-react";
 import React, { useEffect, useState } from "react";
 
 const Accordion = () => {
@@ -45,7 +46,12 @@ const Accordion = () => {
                           {item.ques}
                         </p>
 
-                        <span className="expand-bar"></span>
+                        {
+                          accordionOpen === item.id ? 
+                          <MinusCircle size={28} color="#30A7D7" weight="light" />
+                          :
+                          <PlusCircle size={28} color="#393e50" weight="light" />
+                        }
                       </li>
                       <li
                         className={`font-normal text-base leading-6 text-[rgba(57,62,80,0.4)] list-none ${

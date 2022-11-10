@@ -10,7 +10,7 @@ const Service = () => {
             <div className="col-span-12 max-w-[635px] mx-auto text-center">
               <h2 className="font-bold text-xl md:text-[40px] leading-[60px] text-[#393E50]">
                 Our
-                <span className="text-[#30A7D7]">Service</span>
+                <span className="text-[#30A7D7] ml-2">Service</span>
               </h2>
               <p className="font-normal text-sm md:text-base leading-[24px] text-[rgba(57,62,80,0.4)]">
                 “We have a chance, if we stay focused and choose wisely, to

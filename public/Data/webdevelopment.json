@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "img": "recent-item1",
+    "title": "React, Next, REST & GraphQL Ecommerce",
+    "content": "Pixer is a digital eCommerce Marketplace script build with Laravel, Next JS, TypeScript & Tailwind."
+  },
+  {
+    "id": 1,
+    "img": "recent-item2",
+    "title": "React, Next, REST & GraphQL Ecommerce",
+    "content": "Pixer is a digital eCommerce Marketplace script build with Laravel, Next JS, TypeScript & Tailwind."
+  },
+  {
+    "id": 2,
+    "img": "recent-item3",
+    "title": "React, Next, REST & GraphQL Ecommerce",
+    "content": "Pixer is a digital eCommerce Marketplace script build with Laravel, Next JS, TypeScript & Tailwind."
+  }
+]

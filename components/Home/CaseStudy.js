@@ -19,7 +19,7 @@ const CaseStudy = () => {
             <div className="col-span-12 max-w-[635px] mx-auto text-center">
               <h2 className="font-bold text-xl md:text-[40px] leading-[60px] text-[#393E50]">
                 Case
-                <span className="text-[#30A7D7]">Studies</span>
+                <span className="text-[#30A7D7] ml-2">Studies</span>
               </h2>
               <p className="font-normal text-sm leading-[24px] text-[rgba(57,62,80,0.4)]">
                 In publishing and graphic design, Lorem ipsum is a placeholder
@@ -32,9 +32,9 @@ const CaseStudy = () => {
                   data.map((item, index) => (
                     <div
                       key={index}
-                      className="gellary_img relative rounded-[20px] overflow-hidden"
+                      className="gellary_img relative rounded-[20px] overflow-hidden group"
                     >
-                      <Image
+                      <Image className="transition-all duration-1000 group-hover:scale-125"
                         src={`/assets/images/case_studies/${item.img}.webp`}
                         alt=""
                         width={696}

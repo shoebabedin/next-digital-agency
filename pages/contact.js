@@ -1,7 +1,19 @@
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Accordion from "../components/Common/Accordion/Accordion";
 
 const Contact = () => {
+  const notify = () => toast.success('Thanks for your message', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
   return (
     <>
       {/* <!-- contact banner --> */}
@@ -131,8 +143,7 @@ const Contact = () => {
               <div className="flex items-center justify-center md:p-12">
                 {/* <!-- Author: FormBold Team -->
                 <!-- Learn More: https://formbold.com --> */}
-                <div className="mx-auto w-full max-w-[550px]">
-                  <form action="" method="" className="grid grid-cols-12 gap-4">
+                <div className="mx-auto w-full max-w-[550px] grid grid-cols-12 gap-4">
                     <div className="col-span-12 md:col-span-6">
                       <label
                         for="name"
@@ -179,11 +190,25 @@ const Contact = () => {
                       ></textarea>
                     </div>
                     <div className="col-span-12">
-                      <button className="bg-[#30A7D7] text-sm font-semibold text-white leading-5 outline-none rounded-lg py-4 px-28 mx-auto flex items-center justify-center">
-                        Submit
-                      </button>
+                    <button
+                      onClick={notify}
+                      className="bg-[#30A7D7] text-sm font-semibold text-white leading-5 outline-none rounded-lg py-4 px-28 mx-auto flex items-center justify-center"
+                    >
+                      Submit
+                    </button>
+                    <ToastContainer
+                      position="top-right"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                      newestOnTop={false}
+                      closeOnClick
+                      rtl={false}
+                      pauseOnFocusLoss
+                      draggable
+                      pauseOnHover
+                      theme="dark"
+                    />
                     </div>
-                  </form>
                 </div>
               </div>
             </div>

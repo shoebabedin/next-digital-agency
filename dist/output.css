@@ -658,6 +658,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-\[17px\]{
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -778,10 +783,6 @@ video {
   display: grid;
 }
 
-.\!list-item{
-  display: list-item !important;
-}
-
 .hidden{
   display: none;
 }
@@ -810,6 +811,10 @@ video {
   height: 5rem;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .h-\[30px\]{
   height: 30px;
 }
@@ -820,10 +825,6 @@ video {
 
 .h-\[calc\(100vh-1rem\)\]{
   height: calc(100vh - 1rem);
-}
-
-.h-0{
-  height: 0px;
 }
 
 .max-h-\[86px\]{
@@ -978,11 +979,6 @@ video {
   transform-origin: top;
 }
 
-.-translate-y-\[50\%\]{
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-0{
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -990,6 +986,11 @@ video {
 
 .-translate-y-4{
   --tw-translate-y: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[50\%\]{
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1233,22 +1234,6 @@ video {
   background-color: rgba(48,167,215,0.05);
 }
 
-.fill-\[\]{
-  fill: ;
-}
-
-.fill-\[\#30A7D7\]{
-  fill: #30A7D7;
-}
-
-.stroke-black{
-  stroke: #000;
-}
-
-.stroke-\[\#30A7D7\]{
-  stroke: #30A7D7;
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1298,11 +1283,6 @@ video {
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-\[17px\]{
-  padding-top: 17px;
-  padding-bottom: 17px;
 }
 
 .py-28{
@@ -1372,18 +1352,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
 .pt-4{
   padding-top: 1rem;
 }
@@ -1394,6 +1362,18 @@ video {
 
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-left{
@@ -1580,10 +1560,6 @@ video {
   color: rgb(57 62 80 / 0.6);
 }
 
-.text-\[\]{
-  color: ;
-}
-
 .opacity-100{
   opacity: 1;
 }
@@ -1639,6 +1615,12 @@ video {
   outline-offset: 2px;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1647,14 +1629,16 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .delay-500{
   transition-delay: 500ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .duration-500{
@@ -1663,10 +1647,6 @@ video {
 
 .duration-150{
   transition-duration: 150ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
 }
 
 .ease-in-out{
@@ -2238,6 +2218,17 @@ a.showMore.showLess::after {
 
 /* show more and less */
 
+/* recent work slider */
+
+.recent_work_slider .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* recent work slider */
+
 /* media query */
 
 @media (max-width: 600px) {
@@ -2279,6 +2270,12 @@ a.showMore.showLess::after {
   outline-width: 0px;
 }
 
+.hover\:scale-125:hover{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:rounded-\[20px\]:hover{
   border-radius: 20px;
 }
@@ -2286,10 +2283,6 @@ a.showMore.showLess::after {
 .hover\:bg-indigo-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[rgba\(57\2c 62\2c 80\2c 0\.05\)\]:hover{
-  background-color: rgba(57,62,80,0.05);
 }
 
 .hover\:bg-white:hover{
@@ -2362,6 +2355,12 @@ a.showMore.showLess::after {
   outline-width: 0px;
 }
 
+.group:hover .group-hover\:scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:scale-100{
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -2410,6 +2409,11 @@ a.showMore.showLess::after {
 
   .md\:col-span-4{
     grid-column: span 4 / span 4;
+  }
+
+  .md\:mx-\[28px\]{
+    margin-left: 28px;
+    margin-right: 28px;
   }
 
   .md\:mb-10{
@@ -2553,11 +2557,6 @@ a.showMore.showLess::after {
   .md\:px-44{
     padding-left: 11rem;
     padding-right: 11rem;
-  }
-
-  .md\:px-\[28px\]{
-    padding-left: 28px;
-    padding-right: 28px;
   }
 
   .md\:py-16{

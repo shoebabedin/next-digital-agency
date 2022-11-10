@@ -1,11 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import CustomPlan from "../components/Common/CustomPlan/CustomPlan";
 import Pricing from "../components/Common/Pricing/Pricing";
 import TemplateWork from "../components/Common/TemplateWork/TemplateWork";
-// import CustomPlan from "../../Common/CustomPlan/CustomPlan";
-// import Pricing from "../../Common/Pricing/Pricing";
-// import TemplateWork from "../../Common/TemplateWork/TemplateWork";
 
 const EmailMarketing = () => {
   return (
@@ -22,9 +20,9 @@ const EmailMarketing = () => {
                 Personalized <span className="text-[#30A7D7]">Email</span>{" "}
                 Campaigns
               </h2>
-              <a href="#subscription" role="button" className="max-w-[305px] w-full mx-auto md:mr-auto md:ml-0 max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white hidden lg:flex items-center justify-center">
+              <Link href="#subscription" role="button" className="max-w-[305px] w-full mx-auto md:mr-auto md:ml-0 max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white hidden lg:flex items-center justify-center">
                 Get a Quote
-              </a>
+              </Link>
               <p className="font-normal text-sm leading-5 text-[rgba(57,62,80,0.4)] block lg:hidden text-center">
                 “We have a chance, if we stay focused and choose wisely, to
                 really continue to impact people’s lives in some small way for
@@ -39,9 +37,9 @@ const EmailMarketing = () => {
                 height={562}
               />
 
-              <a href="#subscription" role="button" className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden">
+              <Link href="#subscription" role="button" className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white mt-10 flex items-center justify-center lg:hidden">
                 Get a Quote
-              </a>
+              </Link>
             </div>
           </div>
         </div>

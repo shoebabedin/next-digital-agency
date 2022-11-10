@@ -551,6 +551,15 @@ a.showMore.showLess::after {
 }
 /* show more and less */
 
+/* recent work slider */
+.recent_work_slider .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+/* recent work slider */
+
 /* media query */
 @media (max-width: 600px) {
   /* slider */

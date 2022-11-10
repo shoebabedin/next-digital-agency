@@ -15,7 +15,7 @@ const Seo = () => {
               <p className="font-medium text-base lg:text-2xl leading-[24px] text-[rgba(57,62,80,0.4)] text-center">
                 Search Engine Optimization
               </p>
-              <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center mb-2 md:mb-10">
+              <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center mb-2 md:mb-10 capitalize">
                 Power Up Your
                 <span className="text-[#30A7D7]">Social Confirmation </span> and
                 Lift Up Your Sales
@@ -31,7 +31,7 @@ const Seo = () => {
                 height={470}
               />
 
-              <Link href="#subscription" role="button" className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden">
+              <Link href="#subscription" role="button" className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white mt-10 flex items-center justify-center lg:hidden">
                 Get a Quote
               </Link>
             </div>

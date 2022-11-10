@@ -5,9 +5,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import Accordion from "../components/Common/Accordion/Accordion";
 import CustomPlan from "../components/Common/CustomPlan/CustomPlan";
 import LogoSlider from "../components/Common/LogoSlider/LogoSlider";
-// import Accordion from "../../Common/Accordion/Accordion";
-// import CustomPlan from "../../Common/CustomPlan/CustomPlan";
-// import LogoSlider from "../../Common/LogoSlider/LogoSlider";
 
 const About = () => {
  
@@ -47,10 +44,10 @@ const About = () => {
       <section className="what_we_do py-16">
         <div className="container">
           <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
+            <div className="col-span-12 lg:col-span-6 order-2 lg:order-1 overflow-hidden rounded-2xl">
               <Image
                 src={"/assets/images/what-we-do/img.webp"}
-                className="w-full h-full rounded-2xl"
+                className="w-full h-full rounded-2xl transition-all duration-1000 hover:scale-125"
                 alt=""
                 width={700}
                 height={518}
@@ -168,13 +165,15 @@ const About = () => {
               </ul>
             </div>
             <div className="col-span-12 lg:col-span-6">
+            <div className="overflow-hidden rounded-2xl my-[17px] md:mx-[28px]">
               <Image
-                className="py-[17px] md:px-[28px]"
+                className="transition-all duration-1000 hover:scale-125"
                 src={"/assets/images/our_client_say/right-experience.webp"}
                 alt=""
-                width={580}
-                height={365}
+                width={900}
+                height={500}
               />
+              </div>
             </div>
             <div className="col-span-12 mt-16">
               <LogoSlider/>

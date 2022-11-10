@@ -19,7 +19,7 @@ const TemplateWork = () => {
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12">
               <div className="text-center max-w-[884px] mx-auto mb-4 md:mb-16">
-                <h2 className="font-bold text-xl md:text-[40px] leading-[60px] text-[#393e50] md:mb-6">
+                <h2 className="font-bold text-xl md:text-[40px] leading-[60px] text-[#393e50] md:mb-6 capitalize">
                   Templates that work
                 </h2>
                 <p className="font-medium text-sm md:text-base leading-6 text-[rgba(57,62,80,0.4)]">
@@ -36,10 +36,10 @@ const TemplateWork = () => {
                   gellary.map((item) => (
                     <div
                       key={item.id}
-                      className={`template_gal_item col-span-1`}
+                      className={`template_gal_item col-span-1 overflow-hidden rounded-[10px]`}
                     >
                       <Image
-                        className="w-full h-full rounded-[10px]"
+                        className="w-full h-full transition-all duration-1000 hover:scale-125"
                         src={`/assets/images/template/${item.img}.webp`}
                         alt={item.id}
                         width={345}

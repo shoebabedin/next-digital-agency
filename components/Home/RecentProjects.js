@@ -63,9 +63,9 @@ const RecentProjects = () => {
 
         <Slider {...settings} className="project_slider overflow-hidden max-h-[400px]">
           {data.length > 0 && data.map((item, index) => (
-            <div key={index} className="project_slider_item relative">
+            <div key={index} className="project_slider_item relative group overflow-hidden">
               <Image
-                className="w-full focus-visible:outline-[0px] focus-visible:border-[0px]"
+                className="w-full focus-visible:outline-[0px] focus-visible:border-[0px] transition-all duration-1000 group-hover:scale-125"
                 src={`/assets/images/recent_project/${item.img}.webp`}
                 alt=""
                 width={807}

@@ -1,10 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CustomPlan from "../components/Common/CustomPlan/CustomPlan";
 import Pricing from "../components/Common/Pricing/Pricing";
 
 const WebDevelopment = () => {
+  const [webdata, setWebdata] = useState({});
+
+  useEffect(() => {
+    fetch("/Data/webdevelopment.json")
+      .then((res) => res.json())
+      .then((data) => setWebdata(data));
+  }, []);
+
   return (
     <>
       {/* <!-- hero section --> */}
@@ -33,13 +41,13 @@ const WebDevelopment = () => {
                 height={430}
               />
 
-              <a
+              <Link
                 href="#subscription"
                 role="button"
-                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden"
+                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white mt-10 flex items-center justify-center lg:hidden"
               >
                 Get a Quote
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -247,75 +255,31 @@ const WebDevelopment = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
-                <Link href="#">
-                  <Image
-                    className="w-full h-full"
-                    src={"/assets/images/web-development/recent-item1.webp"}
-                    alt=""
-                    width={461}
-                    height={306}
-                  />
-                </Link>
-              </div>
-              <Link
-                href="#"
-                className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
-              >
-                React, Next, REST & GraphQL Ecommerce
-              </Link>
-              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
-                Pixer is a digital eCommerce Marketplace script build with
-                Laravel, Next JS, TypeScript & Tailwind.
-              </p>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
-                <Link href="#">
-                  <Image
-                    className="w-full h-full"
-                    src={"/assets/images/web-development/recent-item2.webp"}
-                    alt=""
-                    width={461}
-                    height={306}
-                  />
-                </Link>
-              </div>
-              <Link
-                href="#"
-                className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
-              >
-                React, Next, REST & GraphQL Ecommerce
-              </Link>
-              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
-                Pixer is a digital eCommerce Marketplace script build with
-                Laravel, Next JS, TypeScript & Tailwind.
-              </p>
-            </div>
-            <div className="col-span-12 md:col-span-4">
-              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
-                <Link href="#">
-                  <Image
-                    className="w-full h-full"
-                    src={"/assets/images/web-development/recent-item3.webp"}
-                    alt=""
-                    width={461}
-                    height={306}
-                  />
-                </Link>
-              </div>
-              <Link
-                href="#"
-                className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
-              >
-                React, Next, REST & GraphQL Ecommerce
-              </Link>
-              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
-                Pixer is a digital eCommerce Marketplace script build with
-                Laravel, Next JS, TypeScript & Tailwind.
-              </p>
-            </div>
+            {webdata.length > 0 &&
+              webdata.map((item, index) => (
+                <div key={index} className="col-span-12 md:col-span-4 group">
+                  <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
+                    <Link href="#">
+                      <Image
+                        className="w-full h-full transition-all duration-1000 group-hover:scale-125"
+                        src={`/assets/images/web-development/${item.img}.webp`}
+                        alt=""
+                        width={461}
+                        height={306}
+                      />
+                    </Link>
+                  </div>
+                  <Link
+                    href="#"
+                    className="font-medium text-xl leading-[30px] text-[#393e50] mb-4 group-hover:text-[#30A7D7] inline-block transition-all duration-1000"
+                  >
+                    {item.title}
+                  </Link>
+                  <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
+                    {item.content}
+                  </p>
+                </div>
+              ))}
           </div>
         </div>
       </section>

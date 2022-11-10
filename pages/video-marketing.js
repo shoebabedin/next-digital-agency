@@ -36,7 +36,7 @@ const VideoMarketing = () => {
               <p className="font-medium text-base lg:text-2xl leading-[24px] text-[rgba(57,62,80,0.4)] text-center lg:text-left">
                 Video Marketing
               </p>
-              <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center lg:text-left mb-2 md:mb-10">
+              <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center lg:text-left mb-2 md:mb-10 capitalize">
                 <span className="text-[#30A7D7] mr-1">Video</span>
                 that Boost your Business
               </h2>
@@ -59,7 +59,7 @@ const VideoMarketing = () => {
               <Link
                 href="#subscription"
                 role="button"
-                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden mt-10"
+                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white mt-10 flex items-center justify-center lg:hidden"
               >
                 Get a Quote
               </Link>
@@ -168,7 +168,7 @@ const VideoMarketing = () => {
         <div className="max-w-[955px] mx-auto px-4">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12">
-              <h2 className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] text-center mb-5">
+              <h2 className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] text-center mb-5 capitalize">
                 We do this since it works.
               </h2>
               <p className="font-medium text-base leading-[22px] text-[#393e50]/40 text-center mb-16">
@@ -219,9 +219,9 @@ const VideoMarketing = () => {
                   recentwork.map((item, index) => 
                     
                     
-                <div key={index} className="recent_work_slider_item px-2 focus-within:outline-0">
+                <div key={index} className="recent_work_slider_item focus-within:outline-0 rounded-[10px] overflow-hidden">
                   <Image
-                    className="w-full h-full rounded-[10px]"
+                    className="w-full h-full transition-all duration-1000 hover:scale-125"
                     src={`/assets/images/video-development/${item.img}.webp`}
                     alt=""
                     width={338}
