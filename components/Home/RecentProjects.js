@@ -66,7 +66,7 @@ const RecentProjects = () => {
             <div key={index} className="project_slider_item relative">
               <Image
                 className="w-full focus-visible:outline-[0px] focus-visible:border-[0px]"
-                src={`/assets/images/recent_project/${item.img}.png`}
+                src={`/assets/images/recent_project/${item.img}.webp`}
                 alt=""
                 width={807}
                 height={316}

@@ -35,7 +35,7 @@ const CaseStudy = () => {
                       className="gellary_img relative rounded-[20px] overflow-hidden"
                     >
                       <Image
-                        src={`/assets/images/case_studies/${item.img}.png`}
+                        src={`/assets/images/case_studies/${item.img}.webp`}
                         alt=""
                         width={696}
                         height={327}
@@ -59,7 +59,7 @@ const CaseStudy = () => {
                     >
                       <Image
                         className="h-full w-full object-cover"
-                        src={`/assets/images/case_studies/${item.img}.png`}
+                        src={`/assets/images/case_studies/${item.img}.webp`}
                         alt=""
                         width={461}
                         height={286}

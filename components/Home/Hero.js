@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
             <div className="img basis-full md:basis-1/2">
               <Image
-                src={"/assets/images/hero/iMac.png"}
+                src={"/assets/images/hero/iMac.webp"}
                 alt=""
                 width={700}
                 height={565}

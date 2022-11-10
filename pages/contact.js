@@ -193,7 +193,7 @@ const Contact = () => {
       {/* <!-- get in touch --> */}
 
       {/* <!-- frequently asked question --> */}
-      <Accordion/>
+      <Accordion />
       {/* <!-- frequently asked question --> */}
 
       {/* <!-- need to know more  --> */}
@@ -230,7 +230,10 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <a href="mailto:help@numohive.com" className="font-medium text-base leading-6 text-[#393E50] mb-4 inline-block">
+              <a
+                href="mailto:help@numohive.com"
+                className="font-medium text-base leading-6 text-[#393E50] mb-4 inline-block"
+              >
                 help@numohive.com
               </a>
               <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
@@ -238,7 +241,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="col-span-12 md:col-span-6 text-center p-5 bg-[rgba(57,62,80,0.05)]">
-              <span className="inline-block mx-auto mb-[23px]">
+              <span className="flex items-center justify-center mb-[23px]">
                 <svg
                   width="40"
                   height="40"
@@ -255,9 +258,12 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <h4 className="font-medium text-base leading-6 text-[#30A7D7] mb-4">
+              <a
+                href="callto:+880 1245 586 544"
+                className="font-medium text-base leading-6 text-[#30A7D7] mb-4 inline-block"
+              >
                 +880 1245 586 544
-              </h4>
+              </a>
               <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
                 We are always happy to help you
               </p>

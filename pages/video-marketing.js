@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +8,15 @@ import CustomPlan from "../components/Common/CustomPlan/CustomPlan";
 import Pricing from "../components/Common/Pricing/Pricing";
 
 const VideoMarketing = () => {
+  const [recentwork, setRecentwork] = useState({});
+
+  useEffect(() => {
+    fetch("/Data/recentwork.json")
+    .then((res) => res.json())
+    .then(data => setRecentwork(data))
+
+  },[])
+
   const settings = {
     dots: false,
     infinite: true,
@@ -28,7 +37,7 @@ const VideoMarketing = () => {
                 Video Marketing
               </p>
               <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center lg:text-left mb-2 md:mb-10">
-                <span className="text-[#30A7D7]">Video</span>
+                <span className="text-[#30A7D7] mr-1">Video</span>
                 that Boost your Business
               </h2>
               <Link
@@ -41,7 +50,7 @@ const VideoMarketing = () => {
             </div>
             <div className="img col-span-12 lg:col-span-6">
               <Image
-                src={"/assets/images/sms-marketing/hero-section.png"}
+                src={"/assets/images/sms-marketing/hero-section.webp"}
                 alt=""
                 width={676}
                 height={506}
@@ -176,7 +185,7 @@ const VideoMarketing = () => {
                     type="video/mp4"
                   />
                   <source
-                    src={"/assets/images/video-development/video.png"}
+                    src={"/assets/images/video-development/video.webp"}
                     type="video/png"
                   />
                 </video>
@@ -206,60 +215,22 @@ const VideoMarketing = () => {
             </div>
             <div className="col-span-12">
               <Slider {...settings} className="recent_work_slider">
-                <div className="recent_work_slider_item">
-                  <Image
-                    className="w-full h-full rounded-[10px] "
-                    src={"/assets/images/video-development/item1.png"}
-                    alt=""
-                    width={338}
-                    height={225}
-                  />
-                </div>
-                <div className="recent_work_slider_item">
+                {recentwork.length > 0 &&
+                  recentwork.map((item, index) => 
+                    
+                    
+                <div key={index} className="recent_work_slider_item px-2 focus-within:outline-0">
                   <Image
                     className="w-full h-full rounded-[10px]"
-                    src={"/assets/images/video-development/item2.png"}
+                    src={`/assets/images/video-development/${item.img}.webp`}
                     alt=""
                     width={338}
                     height={225}
                   />
                 </div>
-                <div className="recent_work_slider_item">
-                  <Image
-                    className="w-full h-full rounded-[10px] "
-                    src={"/assets/images/video-development/item3.png"}
-                    alt=""
-                    width={338}
-                    height={225}
-                  />
-                </div>
-                <div className="recent_work_slider_item">
-                  <Image
-                    className="w-full h-full rounded-[10px]"
-                    src={"/assets/images/video-development/item4.png"}
-                    alt=""
-                    width={338}
-                    height={225}
-                  />
-                </div>
-                <div className="recent_work_slider_item">
-                  <Image
-                    className="w-full h-full rounded-[10px] "
-                    src={"/assets/images/video-development/item1.png"}
-                    alt=""
-                    width={338}
-                    height={225}
-                  />
-                </div>
-                <div className="recent_work_slider_item">
-                  <Image
-                    className="w-full h-full rounded-[10px]"
-                    src={"/assets/images/video-development/item2.png"}
-                    alt=""
-                    width={338}
-                    height={225}
-                  />
-                </div>
+                    )
+                }
+                
               </Slider>
             </div>
           </div>

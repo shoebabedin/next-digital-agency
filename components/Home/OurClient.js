@@ -23,7 +23,7 @@ const OurClient = () => {
                   <span className="text-[#30A7D7] ml-1">What We Do</span>
                 </h2>
                 <span className="absolute top-0 left-0 -z-10 hidden md:block">
-                  <Image src="/assets/images/our_client_say/dot_bg.png" alt="" width={131} height={132}/>
+                  <Image src="/assets/images/our_client_say/dot-bg.webp" alt="" width={131} height={132}/>
                 </span>
               </div>
               <div className="max-w-[760px] mx-auto mb-[64px]">

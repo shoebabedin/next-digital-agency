@@ -33,11 +33,11 @@ const CaseStudies = () => {
       <section className="case-hero py-4 md:py-16">
         <div className="container">
           <div className="grid grid-cols-12 gap-4">
-            <div className="title col-span-12 lg:col-span-8 relative">
+            <div className="title col-span-12 lg:col-span-8 relative -z-10">
               <div className="">
                 <Image
                   className="rounded-[10px] max-w-[526px] w-full ml-auto"
-                  src={"/assets/images/case-studies-hero/hero-left.png"}
+                  src={"/assets/images/case-studies-hero/hero-left.webp"}
                   alt=""
                   width={526}
                   height={344}
@@ -64,7 +64,7 @@ const CaseStudies = () => {
               <div>
                 <Image
                   className="rounded-[10px] mb-2 w-full object-cover"
-                  src={"/assets/images/case-studies-hero/hero-right.png"}
+                  src={"/assets/images/case-studies-hero/hero-right.webp"}
                   alt=""
                   width={461}
                   height={277}
@@ -97,7 +97,7 @@ const CaseStudies = () => {
                       <div className="mb-[15px]">
                         <Image
                           className="rounded-[10px] w-full"
-                          src={`/assets/images/futured/${item.img}.png`}
+                          src={`/assets/images/futured/${item.img}.webp`}
                           alt=""
                           width={342}
                           height={212}
@@ -123,7 +123,7 @@ const CaseStudies = () => {
               <div className="">
                 <Image
                   className="rounded-[20px] w-full"
-                  src={"/assets/images/recent-post/left-img.jpg"}
+                  src={"/assets/images/recent-post/left-img.webp"}
                   alt=""
                   width={939}
                   height={395}
@@ -163,10 +163,10 @@ const CaseStudies = () => {
                       <div className="img max-w-[86px] max-h-[86px] rounded-[8px] overflow-hidden">
                         <Image
                           className="w-full h-full"
-                          src={`/assets/images/recent-post/${item.img}.png`}
+                          src={`/assets/images/recent-post/${item.img}.webp`}
                           alt=""
-                          width={86}
-                          height={86}
+                          width={100}
+                          height={100}
                         />
                       </div>
                       <div className="content">
@@ -197,7 +197,7 @@ const CaseStudies = () => {
                   <div className="img rounded-[10px] overflow-hidden mb-4">
                     <Image
                       className="w-full"
-                      src={`/assets/images/blog/${item.img}.png`}
+                      src={`/assets/images/blog/${item.img}.webp`}
                       alt=""
                       width={461}
                       height={286}

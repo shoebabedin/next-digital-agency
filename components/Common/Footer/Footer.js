@@ -9,12 +9,12 @@ const Footer = () => {
         <div className="container">
           <div className="grid grid-cols-12 gap-4 pb-10 border-b border-[#A8ADB9]">
             <div className="col-span-12 lg:col-span-5">
-              <Link href="./index.html" passHref legacyBehavior>
+              <Link href="/" passHref legacyBehavior>
                 <Image
                   className="max-w-[160px] lg:max-w-[330px] mx-auto lg:mr-auto lg:ml-0"
-                  src="/assets/images/footer/footer_logo.png"
+                  src="/assets/images/footer/footer-logo.webp"
                   alt=""
-                  width={330}
+                  width={250}
                   height={80}
                 />
               </Link>

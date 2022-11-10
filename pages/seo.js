@@ -167,7 +167,7 @@ const Seo = () => {
             <div className="col-span-12 md:col-span-6 order-2 md:order-1">
               <Image
                 className="w-full"
-                src={'/assets/images/seo/optimization.png'}
+                src={'/assets/images/seo/optimization.webp'}
                 alt=""
                 width={700}
                 height={637}

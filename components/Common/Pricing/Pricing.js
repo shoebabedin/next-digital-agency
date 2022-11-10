@@ -5,7 +5,7 @@ const Pricing = () => {
     <>
       <section id="subscription">
         <div className="max-w-[1184px] mx-auto px-4">
-          <h2 className="font-bold text-2xl md:text-[40px] leading-9 md:leading-[60px] text-[#393e50] text-center md:mb-20">
+          <h2 className="font-bold text-2xl md:text-[40px] leading-9 md:leading-[60px] text-[#393e50] text-center md:mb-20 capitalize">
             Plan Every Thing from Sketch
           </h2>
           <div className="grid grid-cols-12 gap-4">

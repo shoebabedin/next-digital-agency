@@ -25,7 +25,7 @@ const SmsMarketing = () => {
             </div>
             <div className="img col-span-12 lg:col-span-6">
               <Image
-                src={'/assets/images/sms-marketing/hero-section.png'}
+                src={'/assets/images/sms-marketing/hero-section.webp'}
                 alt=""
                 width={676}
                 height={406}
@@ -152,7 +152,7 @@ const SmsMarketing = () => {
             </div>
             <div className="col-span-12 md:col-span-6">
               <Image
-                src={'/assets/images/sms-marketing/easy_reach.png'}
+                src={'/assets/images/sms-marketing/easy-reach.webp'}
                 alt=""
                 width={639}
                 height={636}
@@ -169,7 +169,7 @@ const SmsMarketing = () => {
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 md:col-span-6 order-2 md:order-1">
               <Image
-                src={'/assets/images/sms-marketing/sms_faster_email.png'}
+                src={'/assets/images/sms-marketing/sms-faster-email.webp'}
                 alt=""
                 width={636}
                 height={532}

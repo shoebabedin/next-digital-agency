@@ -40,7 +40,7 @@ const TemplateWork = () => {
                     >
                       <Image
                         className="w-full h-full rounded-[10px]"
-                        src={`/assets/images/template/${item.img}.png`}
+                        src={`/assets/images/template/${item.img}.webp`}
                         alt={item.id}
                         width={345}
                         height={934}

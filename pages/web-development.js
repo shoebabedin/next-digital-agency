@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import CustomPlan from "../components/Common/CustomPlan/CustomPlan";
 import Pricing from "../components/Common/Pricing/Pricing";
@@ -17,18 +18,26 @@ const WebDevelopment = () => {
               <h2 className="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center mb-2 md:mb-10">
                 Optimize your business With our Ecommerce Theme
               </h2>
-              <a href="#subscription" role="button"  className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white hidden mb-16 lg:flex items-center justify-center">
+              <a
+                href="#subscription"
+                role="button"
+                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white hidden mb-16 lg:flex items-center justify-center"
+              >
                 Get a Quote
               </a>
               <Image
                 className="mx-auto"
-                src={'/assets/images/web-development/hero.png'}
+                src={"/assets/images/web-development/hero.webp"}
                 alt=""
                 width={1024}
                 height={430}
               />
 
-              <a href="#subscription" role="button"  className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden">
+              <a
+                href="#subscription"
+                role="button"
+                className="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden"
+              >
                 Get a Quote
               </a>
             </div>
@@ -40,18 +49,12 @@ const WebDevelopment = () => {
       {/* <!-- Social Media Advertising Services --> */}
       <section className="py-4 md:py-16">
         <div className="max-w-[1296px] mx-auto px-4">
-          <h2
-            className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] md:mb-6 text-center mb-16"
-          >
+          <h2 className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] md:mb-6 text-center mb-16">
             Website that we make
           </h2>
           <div className="grid grid-cols-12 ga-4">
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -66,18 +69,12 @@ const WebDevelopment = () => {
                   />
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Facebook Marketing
               </h4>
             </div>
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -108,18 +105,12 @@ const WebDevelopment = () => {
                   </defs>
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Instagram Marketing
               </h4>
             </div>
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -134,18 +125,12 @@ const WebDevelopment = () => {
                   />
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Twitter Marketing
               </h4>
             </div>
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -172,18 +157,12 @@ const WebDevelopment = () => {
                   </defs>
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Youtube Marketing
               </h4>
             </div>
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -210,18 +189,12 @@ const WebDevelopment = () => {
                   </defs>
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Pinterest Marketing
               </h4>
             </div>
-            <div
-              className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
-            >
-              <span
-                className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
-              >
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]">
+              <span className="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4">
                 <svg
                   className="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
                   width="40"
@@ -248,9 +221,7 @@ const WebDevelopment = () => {
                   </defs>
                 </svg>
               </span>
-              <h4
-                className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
-              >
+              <h4 className="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4">
                 Linkedin Marketing
               </h4>
             </div>
@@ -265,14 +236,10 @@ const WebDevelopment = () => {
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12">
               <div className="max-w-[884px] mx-auto px-4 mb-[64px]">
-                <h2
-                  className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] text-center mb-5"
-                >
+                <h2 className="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] text-center mb-5">
                   Recent Works
                 </h2>
-                <p
-                  className="font-medium text-base leading-[22px] text-[#393e50]/40 text-center"
-                >
+                <p className="font-medium text-base leading-[22px] text-[#393e50]/40 text-center">
                   Get a kick off on building your pages and bulletins! Pick a
                   plan that accommodates your business needs and make it your
                   own. Our drag and drop editors make it very simple for anybody
@@ -281,73 +248,70 @@ const WebDevelopment = () => {
               </div>
             </div>
             <div className="col-span-12 md:col-span-4">
-              <div
-                className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
-              >
-                <Image
-                  className="w-full h-full"
-                  src={'/assets/images/web-development/recent_item1.png'}
-                  alt=""
-                  width={461}
-                  height={306}
-                />
+              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
+                <Link href="#">
+                  <Image
+                    className="w-full h-full"
+                    src={"/assets/images/web-development/recent-item1.webp"}
+                    alt=""
+                    width={461}
+                    height={306}
+                  />
+                </Link>
               </div>
-              <h2
+              <Link
+                href="#"
                 className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
               >
                 React, Next, REST & GraphQL Ecommerce
-              </h2>
-              <p
-                className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
-              >
+              </Link>
+              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
                 Pixer is a digital eCommerce Marketplace script build with
                 Laravel, Next JS, TypeScript & Tailwind.
               </p>
             </div>
             <div className="col-span-12 md:col-span-4">
-              <div
-                className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
-              >
-                <Image
-                  className="w-full h-full"
-                  src={'/assets/images/web-development/recent_item2.png'}
-                  alt=""
-                  width={461}
-                  height={306}
-                />
+              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
+                <Link href="#">
+                  <Image
+                    className="w-full h-full"
+                    src={"/assets/images/web-development/recent-item2.webp"}
+                    alt=""
+                    width={461}
+                    height={306}
+                  />
+                </Link>
               </div>
-              <h2
+              <Link
+                href="#"
                 className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
               >
                 React, Next, REST & GraphQL Ecommerce
-              </h2>
-              <p
-                className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
-              >
+              </Link>
+              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
                 Pixer is a digital eCommerce Marketplace script build with
                 Laravel, Next JS, TypeScript & Tailwind.
               </p>
             </div>
             <div className="col-span-12 md:col-span-4">
-              <div
-                className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
-              >
-                <Image
-                  className="w-full h-full"
-                  src={'/assets/images/web-development/recent_item3.png'}
-                  alt=""
-                  width={461}
-                  height={306}
-                />
+              <div className="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden">
+                <Link href="#">
+                  <Image
+                    className="w-full h-full"
+                    src={"/assets/images/web-development/recent-item3.webp"}
+                    alt=""
+                    width={461}
+                    height={306}
+                  />
+                </Link>
               </div>
-              <h2
+              <Link
+                href="#"
                 className="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
               >
                 React, Next, REST & GraphQL Ecommerce
-              </h2>
-              <p
-                className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
-              >
+              </Link>
+              <p className="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]">
                 Pixer is a digital eCommerce Marketplace script build with
                 Laravel, Next JS, TypeScript & Tailwind.
               </p>
@@ -358,11 +322,11 @@ const WebDevelopment = () => {
       {/* <!-- Recent Works --> */}
 
       {/* <!-- plan every thing from sketch --> */}
-      <Pricing/>
+      <Pricing />
       {/* <!-- plan every thing from sketch --> */}
 
       {/* <!-- Custome Plan --> */}
-      <CustomPlan/>
+      <CustomPlan />
       {/* <!-- Custome Plan --> */}
     </>
   );

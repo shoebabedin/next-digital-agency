@@ -31,7 +31,7 @@ const LogoSlider = () => {
             <div key={index} className="logo_slider_item">
               <Image
                 className="mx-auto"
-                src={`/assets/images/logo_slider/${item.img}.png`}
+                src={`/assets/images/logo_slider/${item.img}.webp`}
                 alt=""
                 width={100}
                 height={100}

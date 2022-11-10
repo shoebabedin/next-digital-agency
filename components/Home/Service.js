@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Service = () => {
@@ -51,12 +52,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/email-marketing.html"
+              <Link
+                href="/email-marketing"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-5 xl:p-10">
               <div className="icon w-20 h-20 bg-[rgba(60,97,201,0.1)] rounded-[20px] flex items-center justify-center mx-auto md:mr-auto md:ml-0">
@@ -92,12 +93,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/sms-marketing.html"
+              <Link
+                href="/sms-marketing"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-5 xl:p-10">
               <div className="icon w-20 h-20 bg-[rgba(60,97,201,0.1)] rounded-[20px] flex items-center justify-center mx-auto md:mr-auto md:ml-0">
@@ -125,12 +126,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/social-media-marketing.html"
+              <Link
+                href="/social-marketing"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-5 xl:p-10">
               <div className="icon w-20 h-20 bg-[rgba(60,97,201,0.1)] rounded-[20px] flex items-center justify-center mx-auto md:mr-auto md:ml-0">
@@ -174,12 +175,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/web-development.html"
+              <Link
+                href="/web-development"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-5 xl:p-10">
               <div className="icon w-20 h-20 bg-[rgba(60,97,201,0.1)] rounded-[20px] flex items-center justify-center mx-auto md:mr-auto md:ml-0">
@@ -236,12 +237,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/video-marketing.html"
+              <Link
+                href="/video-marketing"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-5 xl:p-10">
               <div className="icon w-20 h-20 bg-[rgba(60,97,201,0.1)] rounded-[20px] flex items-center justify-center mx-auto md:mr-auto md:ml-0">
@@ -269,12 +270,12 @@ const Service = () => {
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate
               </p>
-              <a
-                href="./pages/seo.html"
+              <Link
+                href="/seo"
                 className="font-semibold text-sm text-[#393e50]/[.4] leading-[21px] text-center md:text-left block"
               >
                 Find out More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

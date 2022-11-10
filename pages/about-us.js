@@ -32,7 +32,7 @@ const About = () => {
             <div className="img col-span-12 lg:col-span-8 order-1 lg:order-2">
               <Image
                 className="w-full"
-                src={"/assets/images/about-hero/hero.png"}
+                src={"/assets/images/about-hero/hero.webp"}
                 alt=""
                 width={939}
                 height={549}
@@ -49,7 +49,7 @@ const About = () => {
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
               <Image
-                src={"/assets/images/what-we-do/img.png"}
+                src={"/assets/images/what-we-do/img.webp"}
                 className="w-full h-full rounded-2xl"
                 alt=""
                 width={700}
@@ -112,7 +112,7 @@ const About = () => {
             <div className="col-span-12 lg:col-span-6">
               <h2 className="font-bold text-xl md:text-[40px] leading-[30px] md:leading-[60px] text-[#393E50] mb-10">
                 We Provide you the best
-                <span className="text-[#30A7D7]">Experience</span>
+                <span className="text-[#30A7D7] ml-2">Experience</span>
               </h2>
               <p className="font-medium text-sm md:text-base leading-[24px] text-[#393E50] mb-10">
                 Based in Paris, we work closely with clients from around the
@@ -170,7 +170,7 @@ const About = () => {
             <div className="col-span-12 lg:col-span-6">
               <Image
                 className="py-[17px] md:px-[28px]"
-                src={"/assets/images/our_client_say/right_experience.jpg"}
+                src={"/assets/images/our_client_say/right-experience.webp"}
                 alt=""
                 width={580}
                 height={365}
