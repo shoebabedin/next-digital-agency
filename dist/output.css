@@ -979,6 +979,10 @@ video {
   flex-basis: 100%;
 }
 
+.basis-2\/6{
+  flex-basis: 33.333333%;
+}
+
 .origin-top{
   transform-origin: top;
 }
