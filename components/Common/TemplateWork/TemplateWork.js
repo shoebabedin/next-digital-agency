@@ -39,7 +39,7 @@ const TemplateWork = () => {
                       className={`template_gal_item col-span-1 overflow-hidden rounded-[10px]`}
                     >
                       <Image
-                        className="w-full h-full transition-all duration-1000 hover:scale-125"
+                        className="w-full h-full transition-all duration-1000 hover:scale-125 object-cover"
                         src={`/assets/images/template/${item.img}.webp`}
                         alt={item.id}
                         width={345}
